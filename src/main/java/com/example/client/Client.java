@@ -1,4 +1,4 @@
-package client;
+package main.java.com.example.client;
 
 import java.io.*;
 import java.net.Socket;
@@ -28,6 +28,7 @@ public class Client {
             this.bufferedWriter.newLine();
             this.bufferedWriter.flush();
 
+            @SuppressWarnings("resource")
             Scanner scanner = new Scanner(System.in);
 
             while (this.socket.isConnected()) {
